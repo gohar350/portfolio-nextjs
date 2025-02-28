@@ -1,18 +1,36 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
 const Header = () => {
-  return (
-    <header id="header" className="header dark-background d-flex flex-column">
-      <i className="header-toggle d-xl-none bi bi-list"></i>
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-      <div className="profile-Image">
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <header
+      id="header"
+      className={`header dark-background d-flex flex-column ${
+        isMenuOpen ? "header-show" : ""
+      }`}
+    >
+      {/* Mobile Menu Toggle Button */}
+      <i
+        className={`header-toggle d-xl-none bi ${
+          isMenuOpen ? "bi-x" : "bi-list"
+        }`}
+        onClick={toggleMenu}
+      ></i>
+
+      <div className="profile-img">
         <Image
           src="/assets/img/gohar.jpeg"
           alt=""
           className="Image-fluid rounded-circle"
-          width={100}
+          width={120}
           height={100}
         />
       </div>

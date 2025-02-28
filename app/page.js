@@ -1,30 +1,18 @@
-import Image from "next/image";
-export default function Home() {
+import Article from "@/components/common/Article";
+import Landing from "@/components/common/Landing";
+import Stats from "@/components/common/Stats";
+
+import AboutData from "@/utiles/about";
+import StatsData from "@/utiles/stats";
+import ResumeData from "@/utiles/resume";
+import Resume from "@/components/common/Resume";
+export default function Page() {
   return (
     <main className="main">
-      <section id="hero" className="hero section dark-background">
-        <Image src="/assets/img/bg-gohar.jpg" alt="" fill />
-        <div className="container">
-          <h2>Muhammad Gohar</h2>
-          <p>
-            I'm{" "}
-            <span
-              className="typed"
-              data-typed-items="Designer, Developer, Freelancer, Photographer"
-            >
-              Software Developer
-            </span>
-            <span
-              className="typed-cursor typed-cursor--blink"
-              aria-hidden="true"
-            ></span>
-            <span
-              className="typed-cursor typed-cursor--blink"
-              aria-hidden="true"
-            ></span>
-          </p>
-        </div>
-      </section>
+      <Landing />
+      <Article data={AboutData} />
+      <Stats stats={StatsData} />
+      <Resume resumeData={ResumeData} />
     </main>
   );
 }
