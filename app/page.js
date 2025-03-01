@@ -6,6 +6,7 @@ import AboutData from "@/utiles/about";
 import StatsData from "@/utiles/stats";
 import ResumeData from "@/utiles/resume";
 import Resume from "@/components/common/Resume";
+import Portfolio from "@/components/common/Portfolio";
 export default function Page() {
   return (
     <main className="main">
@@ -13,6 +14,7 @@ export default function Page() {
       <Article data={AboutData} />
       <Stats stats={StatsData} />
       <Resume resumeData={ResumeData} />
+      <Portfolio />
     </main>
   );
 }
