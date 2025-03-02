@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["racingandsports.co.uk"], // ✅ Add allowed external domains here
+    domains: ["racingandsports.co.uk", "www.betwayscores.com"], // ✅ Add allowed external domains here
   },
 };
 

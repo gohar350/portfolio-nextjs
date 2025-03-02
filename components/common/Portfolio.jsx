@@ -6,58 +6,40 @@ export default function Portfolio() {
       id: 1,
       category: "app",
       title: "Racing And Sports",
-      img: "https://racingandsports.co.uk/_next/image?url=https%3A%2F%2Fras-live.ams3.digitaloceanspaces.com%2Fimages%2Fland%2F900%2F2728_maximilian-doncaster-1.webp&w=3840&q=75",
       link: "https://racingandsports.co.uk/",
+      thumbnail: "https://racingandsports.co.uk/assets/svg/rasBrandLogo.svg", // Replace with actual thumbnail
     },
     {
       id: 2,
-      category: "product",
-      title: "Product 1",
-      img: "/assets/img/portfolio/product-1.jpg",
+      category: "app",
+      title: "Football First",
+      link: "https://www.footballfirst.com/",
+      thumbnail:
+        "https://cms.footballfirst.com/tenanta945c709-47b7-4ed3-8cd2-cdef7275b99c/app/public/images/logo/header_dark_logo_1738321431.svg",
     },
     {
       id: 3,
-      category: "branding",
-      title: "Branding 1",
-      img: "/assets/img/portfolio/branding-1.jpg",
+      category: "app",
+      title: "Betway Scores",
+      link: "https://www.betwayscores.com/",
+      thumbnail:
+        "https://www.betwayscores.com/_next/image?url=%2Fimages%2FBetwayLogoNew.png&w=384&q=75",
     },
     {
       id: 4,
-      category: "books",
-      title: "Books 1",
-      img: "/assets/img/portfolio/books-1.jpg",
-    },
-    {
-      id: 5,
       category: "app",
-      title: "App 2",
-      img: "/assets/img/portfolio/app-2.jpg",
-    },
-    {
-      id: 6,
-      category: "product",
-      title: "Product 2",
-      img: "/assets/img/portfolio/product-2.jpg",
-    },
-    {
-      id: 7,
-      category: "branding",
-      title: "Branding 2",
-      img: "/assets/img/portfolio/branding-2.jpg",
-    },
-    {
-      id: 8,
-      category: "books",
-      title: "Books 2",
-      img: "/assets/img/portfolio/books-2.jpg",
+      title: "Score Mania",
+      link: "https://www.scoremania.com/",
+      thumbnail:
+        "https://cms.scoremania.com/tenant6e72ff02-9663-421f-b24d-b5c63955202d/app/public/images/logo/header_light_logo_1738229166.svg",
     },
   ];
 
   return (
-    <section id="portfolio" className="portfolio section light-background">
+    <section id="portfolio" className="portfolio section dark-background">
       <div className="container section-title">
         <h2>Portfolio</h2>
-        <p>Here are the Links of Products I am working on !</p>
+        <p>Here are the Links of Products I am working on!</p>
       </div>
 
       <div className="container">
@@ -66,19 +48,14 @@ export default function Portfolio() {
             <div key={item.id} className={`portfolio-item ${item.category}`}>
               <div className="portfolio-content">
                 <img
-                  src={item.img}
-                  alt={item.title}
+                  src={item.thumbnail}
+                  alt={`${item.title} Thumbnail`}
                   className="portfolio-img"
+                  width={300}
+                  height={200}
                 />
                 <div className="portfolio-info">
                   <h4>{item.title}</h4>
-                  <details>
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      className="lightbox-img"
-                    />
-                  </details>
                   <Link href={item?.link || "#"} className="details-link">
                     Visit Site
                   </Link>
