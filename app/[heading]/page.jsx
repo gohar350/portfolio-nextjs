@@ -1,41 +1,29 @@
-import React from "react";
-import Image from "next/image";
+import Article from "@/components/common/Article";
+import Landing from "@/components/common/Landing";
+import Stats from "@/components/common/Stats";
+import Resume from "@/components/common/Resume";
+import Portfolio from "@/components/common/Portfolio";
+import Testimonials from "@/components/common/Testimonial";
 
-const page = async ({ param: heading }) => {
+import about from "@/utiles/about";
+import stats from "@/utiles/stats";
+import resume from "@/utiles/resume";
+import portfolio from "@/utiles/portfolio";
+import testimonials from "@/utiles/testimonials";
+import ContactSection from "@/components/common/Contact";
+import contact from "@/utiles/contact";
+
+export default async function Page({ params }) {
+  const { heading } = await params;
+
   return (
-    // <section id="about" className="about section">
-    //   <Image
-    //     src="/assets/img/hero-bg.jpg"
-    //     alt=""
-    //     data-aos="fade-in"
-    //     className=""
-    //     width={1000}
-    //     height={1000}
-    //   />
-
-    //   <div className="container" data-aos="fade-up" data-aos-delay="100">
-    //     <h2>{heading}</h2>
-    //     <p>
-    //       I'm{" "}
-    //       <span
-    //         className="typed"
-    //         data-typed-items="Designer, Developer, Freelancer, Photographer"
-    //       >
-    //         Designer
-    //       </span>
-    //       <span
-    //         className="typed-cursor typed-cursor--blink"
-    //         aria-hidden="true"
-    //       ></span>
-    //       <span
-    //         className="typed-cursor typed-cursor--blink"
-    //         aria-hidden="true"
-    //       ></span>
-    //     </p>
-    //   </div>
-    // </section>
-    <h1>HI</h1>
+    <main className="main">
+      {heading === "about" && <Article data={about} />}
+      {heading === "about" && <Stats stats={stats} />}
+      {heading === "resume" && <Resume resumeData={resume} />}
+      {heading === "portfolio" && <Portfolio portfolioItems={portfolio} />}
+      {heading === "portfolio" && <Testimonials testimonials={testimonials} />}
+      {heading === "contact" && <ContactSection data={contact} />}
+    </main>
   );
-};
-
-export default page;
+}

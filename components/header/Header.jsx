@@ -2,9 +2,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -28,7 +30,7 @@ const Header = () => {
       <div className="profile-img">
         <Image
           src="/assets/img/gohar.jpeg"
-          alt=""
+          alt="Profile Picture"
           className="Image-fluid rounded-circle"
           width={120}
           height={100}
@@ -36,7 +38,7 @@ const Header = () => {
       </div>
 
       <Link
-        href="index.html"
+        href="/"
         className="logo d-flex align-items-center justify-content-center"
       >
         <h1 className="sitename">Gohar Butt</h1>
@@ -60,36 +62,42 @@ const Header = () => {
         </Link>
       </div>
 
-      <nav id="navmenu" className="navmenu">
+      <nav id="navmenu" className="navmenu" onClick={toggleMenu}>
         <ul>
           <li>
-            <Link href="/hero" className="active">
-              <i className="bi bi-house navicon"></i>Home
+            <Link href="/" className={pathname === "/" ? "active" : ""}>
+              <i className="bi bi-house navicon"></i> Home
             </Link>
           </li>
           <li>
-            <Link href="/about">
+            <Link
+              href="/about"
+              className={pathname === "/about" ? "active" : ""}
+            >
               <i className="bi bi-person navicon"></i> About
             </Link>
           </li>
           <li>
-            <Link href="/resume">
+            <Link
+              href="/resume"
+              className={pathname === "/resume" ? "active" : ""}
+            >
               <i className="bi bi-file-earmark-text navicon"></i> Resume
             </Link>
           </li>
           <li>
-            <Link href="/portfolio">
+            <Link
+              href="/portfolio"
+              className={pathname === "/portfolio" ? "active" : ""}
+            >
               <i className="bi bi-images navicon"></i> Portfolio
             </Link>
           </li>
           <li>
-            <Link href="/services">
-              <i className="bi bi-hdd-stack navicon"></i> Services
-            </Link>
-          </li>
-
-          <li>
-            <Link href="/contact">
+            <Link
+              href="/contact"
+              className={pathname === "/contact" ? "active" : ""}
+            >
               <i className="bi bi-envelope navicon"></i> Contact
             </Link>
           </li>
