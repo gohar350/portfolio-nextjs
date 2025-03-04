@@ -1,7 +1,7 @@
 export default {
   title: "About",
   des: "Results-driven Software Engineer with 3+ years of experience specializing in React.js, Next.js, NestJS, and API integrations. Proven track record of developing scalable, high-performance web applications, optimizing backend workflows, and delivering real-time platforms. Experienced in JavaScript, TypeScript, MySQL, AWS, and CI/CD pipelines, with a strong ability to work in agile environments. Passionate about solving complex problems, learning new technologies, and contributing to innovative digital solutions. Currently located in Riyadh, KSA and eager to join a forward-thinking team.",
-  img: "/assets/img/gohar.jpeg",
+  img: "/assets/img/gohar.jpg",
   role: {
     name: "Software Engineer",
     intro:

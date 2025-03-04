@@ -29,7 +29,7 @@ const Header = () => {
 
       <div className="profile-img">
         <Image
-          src="/assets/img/gohar.jpeg"
+          src="/assets/img/gohar.jpg"
           alt="Profile Picture"
           className="Image-fluid rounded-circle"
           width={120}
