@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
 import Home from "@/components/effects/Home";
+import { commonSeo } from "@/utiles/seo";
+import seoData from "@/utiles/seoData";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,13 +15,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export async function generateMetadata() {
+export function generateMetadata() {
+  const canonicalURL = `${process.env.NEXT_PUBLIC_SITEBASE_URL}/`;
+  let data = commonSeo(canonicalURL, seoData);
+
+  const { response, ...seoObj } = data;
   return {
-    title: "Muhammad Gohar",
-    description: "Muhammad Gohar Porfolio Website",
-    alternates: {
-      canonical: `/`,
-    },
+    ...seoObj,
   };
 }
 
