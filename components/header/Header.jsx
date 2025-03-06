@@ -45,19 +45,25 @@ const Header = () => {
       </Link>
 
       <div className="social-links text-center">
-        <Link href="#" className="twitter">
+        {/* <Link href="#" className="twitter">
           <i className="bi bi-twitter-x"></i>
-        </Link>
-        <Link href="#" className="facebook">
+        </Link> */}
+        <Link
+          href="https://www.facebook.com/gohar.butt.1654/"
+          className="facebook"
+        >
           <i className="bi bi-facebook"></i>
         </Link>
-        <Link href="#" className="instagram">
+        <Link href="https://www.instagram.com/povgohar/" className="instagram">
           <i className="bi bi-instagram"></i>
         </Link>
-        <Link href="#" className="google-plus">
+        {/* <Link href="#" className="google-plus">
           <i className="bi bi-skype"></i>
-        </Link>
-        <Link href="#" className="linkedin">
+        </Link> */}
+        <Link
+          href="https://www.linkedin.com/in/gohar-butt-390122209/"
+          className="linkedin"
+        >
           <i className="bi bi-linkedin"></i>
         </Link>
       </div>
