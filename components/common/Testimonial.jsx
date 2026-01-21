@@ -46,13 +46,13 @@ export default function Testimonials({ testimonials = [] }) {
                   <span>{testimonial?.quote}</span>
                   <i className="bi bi-quote quote-icon-right"></i>
                 </p>
-                <Image
+                {/* <Image
                   src={testimonial?.image}
                   alt={testimonial?.name}
                   width={80}
                   height={80}
                   className="testimonial-img"
-                />
+                /> */}
                 <h3>{testimonial?.name}</h3>
                 <h4>{testimonial?.position}</h4>
               </div>

@@ -3,7 +3,6 @@ import React from "react";
 const Resume = ({ resumeData = {} }) => {
   return (
     <section id="resume" className="resume section">
-      {/* Section Title */}
       <div className="container section-title" data-aos="fade-up">
         <h2>Resume</h2>
         <p>{resumeData?.description ?? ""}</p>
@@ -36,6 +35,7 @@ const Resume = ({ resumeData = {} }) => {
                 <p>{edu.description}</p>
               </div>
             ))}
+
             <h3 className="resume-title">Certifications</h3>
             {resumeData?.certifications?.map((cert, index) => (
               <div key={index} className="resume-item">
@@ -46,6 +46,7 @@ const Resume = ({ resumeData = {} }) => {
                 </p>
               </div>
             ))}
+
             <h3 className="resume-title">Languages</h3>
             <ul>
               {resumeData?.languages?.map((language, index) => (
@@ -76,18 +77,21 @@ const Resume = ({ resumeData = {} }) => {
         <div className="row mt-4" data-aos="fade-up" data-aos-delay="300">
           <div className="col-lg-6">
             <h3 className="resume-title">Projects</h3>
-            <ul>
-              {resumeData?.projects?.map((exp, index) => (
-                <div key={index} className="resume-item">
-                  <h4>{exp.title}</h4>
-                  <ul>
-                    {exp?.responsibilities?.map((task, idx) => (
-                      <li key={idx}>{task}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </ul>
+            {resumeData?.projects?.map((project, index) => (
+              <div key={index} className="resume-item">
+                <h4>{project.title}</h4>
+                {project.tech && (
+                  <p className="project-tech">
+                    <i className="bi bi-code-slash"></i> {project.tech}
+                  </p>
+                )}
+                <ul>
+                  {project?.responsibilities?.map((task, idx) => (
+                    <li key={idx}>{task}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
           <div className="col-lg-6">
             <h3 className="resume-title">Leadership</h3>
@@ -96,6 +100,23 @@ const Resume = ({ resumeData = {} }) => {
                 <li key={index}>{role}</li>
               ))}
             </ul>
+
+            {resumeData?.aiWorkflow && (
+              <>
+                <h3 className="resume-title mt-4">AI-Assisted Workflow</h3>
+                <div className="ai-workflow-mini">
+                  {resumeData.aiWorkflow.map((item, index) => (
+                    <div key={index} className="workflow-mini-item">
+                      <span className="workflow-step-num">{index + 1}</span>
+                      <div className="workflow-step-info">
+                        <strong>{item.step.replace(/^\d+\.\s*/, "")}</strong>
+                        <span>{item.desc}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>

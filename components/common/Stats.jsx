@@ -29,7 +29,8 @@ const Stats = ({ stats = {} }) => {
 
       <section id="skills" className="skills section light-background">
         <div className="container section-title" data-aos="fade-up">
-          <h2>Skills</h2>
+          <h2>Technical Skills</h2>
+          <p>Expert-level proficiency in modern web development technologies</p>
         </div>
 
         <div className="container" data-aos="fade-up" data-aos-delay="100">
@@ -63,9 +64,63 @@ const Stats = ({ stats = {} }) => {
             ))}
           </div>
         </div>
+
+        {stats?.technicalSkills && (
+          <div className="container mt-5" data-aos="fade-up" data-aos-delay="200">
+            <div className="tech-skills-grid">
+              {Object.entries(stats.technicalSkills).map(([category, skills], index) => (
+                <div key={category} className="tech-category" data-aos="fade-up" data-aos-delay={100 + index * 50}>
+                  <h4 className="category-title">
+                    <i className={getCategoryIcon(category)}></i>
+                    {formatCategoryName(category)}
+                  </h4>
+                  <div className="tech-tags">
+                    {skills.map((skill, idx) => (
+                      <span key={idx} className="tech-tag">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </section>
     </>
   );
+};
+
+const getCategoryIcon = (category) => {
+  const icons = {
+    languages: "bi bi-code-slash",
+    frontend: "bi bi-window",
+    stateManagement: "bi bi-diagram-3",
+    styling: "bi bi-palette",
+    realTime: "bi bi-broadcast",
+    backend: "bi bi-server",
+    database: "bi bi-database",
+    devops: "bi bi-gear",
+    testing: "bi bi-check2-circle",
+    seo: "bi bi-search",
+  };
+  return icons[category] || "bi bi-star";
+};
+
+const formatCategoryName = (category) => {
+  const names = {
+    languages: "Languages",
+    frontend: "Frontend",
+    stateManagement: "State Management",
+    styling: "Styling & UI",
+    realTime: "Real-Time",
+    backend: "Backend",
+    database: "Database",
+    devops: "DevOps & Tools",
+    testing: "Testing",
+    seo: "SEO & Performance",
+  };
+  return names[category] || category;
 };
 
 export default Stats;

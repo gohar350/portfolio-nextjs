@@ -1,12 +1,12 @@
 export default {
   title: "About",
 
-  des: "Results-driven Software Engineer with 3+ years of experience specializing in React.js, Next.js, NestJS, and API integrations. Proven track record of developing scalable, high-performance web applications, optimizing backend workflows, and delivering real-time platforms. Experienced in JavaScript, TypeScript, MySQL, AWS, and CI/CD pipelines, with a strong ability to work in agile environments. Passionate about solving complex problems, learning new technologies, and contributing to innovative digital solutions.",
-  img: "/assets/img/gohar.jpeg",
+  des: "Results-driven Frontend Engineer and React Developer with 2+ years of experience building scalable, high-performance, and SEO-optimized web applications. Expert in React.js, Next.js, TypeScript, and JavaScript (ES6+) with deep knowledge of Server-Side Rendering (SSR), Static Site Generation (SSG), and Incremental Static Regeneration (ISR). AI-Powered Developer leveraging Claude AI and Claude Code CLI to achieve 5x productivity improvement in development workflows.",
+  img: "/assets/img/gohar.jpg",
   role: {
-    name: "Software Engineer",
+    name: "Frontend Engineer | React Developer | AI Prompt Engineer",
     intro:
-      "Experienced Software Engineer with a focus on advanced Front-End Development and API Integration. Skilled in crafting high-impact, scalable web applications using React.js, Next.js, and modern JavaScript and TypeScript practices. Proficient in optimizing performance in agile environments through collaborative problem-solving. Adept with React Query, Redux, Context API, and custom hooks to manage state and side effects efficiently. Experience working with REST APIs, microservices, Axios, Fetch, and legacy systems using jQuery. Strong understanding of SEO, sitemaps, and server-side rendering in Next.js for search visibility. Driven to contribute to cutting-edge software solutions around the world.",
+      "AI-Powered Developer leveraging Claude AI and Claude Code CLI to achieve 5x productivity improvement in development workflows, code generation, debugging, and technical documentation. Proficient in AI Prompt Engineering, MCP (Model Context Protocol) tools integration, and creating comprehensive Markdown documentation. Expert in React.js, Next.js 14, TypeScript, and modern JavaScript with deep knowledge of SSR, SSG, and ISR.",
     info: [
       { label: "Birthday", link: null, value: "9 Nov, 2000" },
       {
@@ -14,8 +14,8 @@ export default {
         link: "https://www.linkedin.com/in/gohar-butt-390122209/",
         value: "View Profile",
       },
-      { label: "Phone", link: null, value: "+923059358248" },
-      { label: "City", link: null, value: "Riyadh" },
+      { label: "Phone", link: null, value: "+92 305 935 8248" },
+      { label: "City", link: null, value: "Lahore, Pakistan" },
       { label: "Age", link: null, value: "24" },
       { label: "Degree", link: null, value: "BS(CS) from FAST-NUCES" },
       {
@@ -26,5 +26,6 @@ export default {
       { label: "Freelance", link: null, value: "Available" },
     ],
   },
-  description: "I specialize in front-end and back-end development...",
+  description:
+    "I specialize in building high-performance, SEO-optimized web applications using React.js, Next.js, and TypeScript. With expertise in AI-assisted development using Claude AI, I achieve 5x productivity improvement in coding, debugging, and documentation tasks.",
 };

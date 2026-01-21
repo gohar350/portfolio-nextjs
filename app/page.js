@@ -1,6 +1,7 @@
 import Article from "@/components/common/Article";
 import Landing from "@/components/common/Landing";
 import Stats from "@/components/common/Stats";
+import AIExpertise from "@/components/common/AIExpertise";
 import Resume from "@/components/common/Resume";
 import Portfolio from "@/components/common/Portfolio";
 import Testimonials from "@/components/common/Testimonial";
@@ -19,6 +20,7 @@ export default function Page() {
       <Landing />
       <Article data={about} />
       <Stats stats={stats} />
+      <AIExpertise aiExpertise={stats.aiExpertise} aiWorkflow={resume.aiWorkflow} />
       <Resume resumeData={resume} />
       <Portfolio portfolioItems={portfolio} />
       <Testimonials testimonials={testimonials} />

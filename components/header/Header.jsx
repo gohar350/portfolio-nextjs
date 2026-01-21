@@ -19,7 +19,6 @@ const Header = () => {
         isMenuOpen ? "header-show" : ""
       }`}
     >
-      {/* Mobile Menu Toggle Button */}
       <i
         className={`header-toggle d-xl-none bi ${
           isMenuOpen ? "bi-x" : "bi-list"
@@ -30,7 +29,7 @@ const Header = () => {
       <div className="profile-img">
         <Image
           src="/assets/img/gohar.jpg"
-          alt="Profile Picture"
+          alt="Muhammad Gohar - Frontend Engineer"
           className="Image-fluid rounded-circle"
           width={120}
           height={100}
@@ -41,30 +40,51 @@ const Header = () => {
         href="/"
         className="logo d-flex align-items-center justify-content-center"
       >
-        <h1 className="sitename">Gohar Butt</h1>
+        <h1 className="sitename">Muhammad Gohar</h1>
       </Link>
 
+      <div className="profile-tagline">
+        <span className="ai-badge">
+          <i className="bi bi-robot"></i> AI-Powered Dev
+        </span>
+      </div>
+
       <div className="social-links text-center">
-        {/* <Link href="#" className="twitter">
-          <i className="bi bi-twitter-x"></i>
-        </Link> */}
-        <Link
-          href="https://www.facebook.com/gohar.butt.1654/"
-          className="facebook"
-        >
-          <i className="bi bi-facebook"></i>
-        </Link>
-        <Link href="https://www.instagram.com/povgohar/" className="instagram">
-          <i className="bi bi-instagram"></i>
-        </Link>
-        {/* <Link href="#" className="google-plus">
-          <i className="bi bi-skype"></i>
-        </Link> */}
         <Link
           href="https://www.linkedin.com/in/gohar-butt-390122209/"
           className="linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
           <i className="bi bi-linkedin"></i>
+        </Link>
+        <Link
+          href="https://github.com/gohar350"
+          className="github"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
+          <i className="bi bi-github"></i>
+        </Link>
+        <Link
+          href="https://www.facebook.com/gohar.butt.1654/"
+          className="facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+        >
+          <i className="bi bi-facebook"></i>
+        </Link>
+        <Link
+          href="https://www.instagram.com/povgohar/"
+          className="instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i className="bi bi-instagram"></i>
         </Link>
       </div>
 
