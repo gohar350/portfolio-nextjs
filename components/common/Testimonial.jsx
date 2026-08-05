@@ -1,64 +1,36 @@
-"use client";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import Image from "next/image";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-
 export default function Testimonials({ testimonials = [] }) {
-  useEffect(() => {
-    AOS.init({ duration: 800 });
-  }, []);
-
   return (
-    <section
-      id="testimonials"
-      className="testimonials section light-background"
-    >
-      <div className="container section-title" data-aos="fade-up">
-        <h2>Recommendations</h2>
-        <p>See what people are saying about me!</p>
-      </div>
+    <section className="section" id="testimonials">
+      <div className="shell">
+        <div className="head" data-reveal>
+          <span className="eyebrow">Recommendations</span>
+          <h2>
+            What colleagues <span className="grad">say</span>
+          </h2>
+          <p>Unedited recommendations from people I&apos;ve shipped with.</p>
+        </div>
 
-      <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <Swiper
-          modules={[Pagination, Autoplay]}
-          loop={true}
-          speed={600}
-          autoplay={{ delay: 5000 }}
-          slidesPerView={1}
-          spaceBetween={40}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            1200: { slidesPerView: 3, spaceBetween: 20 },
-          }}
-          className="swiper-container"
-        >
-          {testimonials?.map((testimonial, i) => (
-            <SwiperSlide key={i}>
-              <div className="testimonial-item">
-                <p>
-                  <i className="bi bi-quote quote-icon-left"></i>
-                  <span>{testimonial?.quote}</span>
-                  <i className="bi bi-quote quote-icon-right"></i>
-                </p>
-                {/* <Image
-                  src={testimonial?.image}
-                  alt={testimonial?.name}
-                  width={80}
-                  height={80}
-                  className="testimonial-img"
-                /> */}
-                <h3>{testimonial?.name}</h3>
-                <h4>{testimonial?.position}</h4>
-              </div>
-            </SwiperSlide>
+        <div className="rail">
+          {testimonials.map((t, i) => (
+            <article
+              className="card rail__item"
+              key={t.name}
+              data-reveal
+              style={{ "--i": i % 3 }}
+            >
+              <blockquote className="quote">{t.quote}</blockquote>
+              <footer className="who">
+                <span className="who__n">{t.name}</span>
+                <span className="who__p">{t.position}</span>
+              </footer>
+            </article>
           ))}
-        </Swiper>
+        </div>
+
+        <p className="rail__hint">
+          <i className="bi bi-arrow-left-right" aria-hidden="true" />
+          Swipe for more
+        </p>
       </div>
     </section>
   );

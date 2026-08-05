@@ -1,74 +1,83 @@
-import React from "react";
 import Image from "next/image";
 
-const Article = ({ data = {} }) => {
+export default function Article({ data = {}, primary = false }) {
+  const info = data?.role?.info ?? [];
+  // Exactly one <h1> per page: this section owns it on /about.
+  const H = primary ? "h1" : "h2";
+
   return (
-    <section id={data?.title} className={`${data?.title ?? ""} section`}>
-      <div className="container section-title" data-aos="fade-up">
-        <h2>{data?.title?.toUpperCase() ?? "Untitled"}</h2>
-        <p>{data?.des ?? ""}</p>
-      </div>
+    <section className="section" id="about">
+      <div className="shell">
+        <div className="head" data-reveal>
+          <span className="eyebrow">About</span>
+          <H>
+            {primary ? (
+              <>
+                Muhammad Gohar — <span className="grad">Frontend Engineer</span>
+              </>
+            ) : (
+              <>
+                Engineering for <span className="grad">scale and speed</span>
+              </>
+            )}
+          </H>
+          <p>{data?.description}</p>
+        </div>
 
-      <div className="container" data-aos="fade-up" data-aos-delay="100">
-        <div className="row gy-4 justify-content-center">
+        <div className="about__grid">
           {data?.img && (
-            <div className="col-lg-4">
+            <figure className="portrait" data-reveal>
               <Image
-                src={data?.img}
-                className="img-fluid"
-                alt="Profile"
-                width={400}
-                height={100}
+                src={data.img}
+                alt="Muhammad Gohar"
+                width={520}
+                height={650}
+                sizes="(max-width: 899px) 340px, 40vw"
+                priority
               />
-            </div>
+              <figcaption className="portrait__tag">
+                <span className="pulse" aria-hidden="true" />
+                Lahore, Pakistan
+              </figcaption>
+            </figure>
           )}
 
-          {data?.role && (
-            <div className="col-lg-8 content">
-              <h2>{data?.role?.name ?? "Role Missing"}</h2>
-              <p className="fst-italic py-3">{data?.role?.intro ?? ""}</p>
+          <div>
+            <h3
+              className="tl__role"
+              style={{ marginBottom: "1rem" }}
+              data-reveal
+            >
+              {data?.role?.name}
+            </h3>
 
-              {/* Splitting info into two columns */}
-              <div className="row">
-                {[0, 1].map((colIndex) => (
-                  <div key={colIndex} className="col-lg-6">
-                    <ul>
-                      {data?.role?.info?.length
-                        ? data?.role?.info
-                            ?.slice(
-                              colIndex *
-                                Math.ceil((data?.role?.info?.length || 0) / 2),
-                              (colIndex + 1) *
-                                Math.ceil((data?.role?.info?.length || 0) / 2)
-                            )
-                            .map((item, index) => (
-                              <li key={index}>
-                                <i className="bi bi-chevron-right"></i>{" "}
-                                <strong>{item.label}:</strong>{" "}
-                                {item.link ? (
-                                  <a
-                                    href={item.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                  >
-                                    {item.value}
-                                  </a>
-                                ) : (
-                                  <span>{item.value ?? "N/A"}</span>
-                                )}
-                              </li>
-                            ))
-                        : null}
-                    </ul>
-                  </div>
-                ))}
-              </div>
+            <p className="about__bio" data-reveal style={{ "--i": 1 }}>
+              {data?.role?.intro}
+            </p>
+
+            <div className="factgrid" data-reveal style={{ "--i": 2 }}>
+              {info.map((item) => (
+                <div className="fact" key={item.label}>
+                  <span className="fact__k">{item.label}</span>
+                  <span className="fact__v">
+                    {item.link ? (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {item.value}
+                      </a>
+                    ) : (
+                      item.value
+                    )}
+                  </span>
+                </div>
+              ))}
             </div>
-          )}
+          </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Article;
+}

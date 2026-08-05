@@ -1,36 +1,69 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
-import Home from "@/components/effects/Home";
-import { commonSeo } from "@/utiles/seo";
-import seoData from "@/utiles/seoData";
-import Script from "next/script"; // ✅ Import Next.js Script component
+import Footer from "@/components/common/Footer";
+import Motion from "@/components/effects/Motion";
+import { SITE_URL, SITE_NAME, PERSON } from "@/utiles/site";
+import Script from "next/script";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const display = Space_Grotesk({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const body = Inter({
+  variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  display: "swap",
 });
 
-export function generateMetadata() {
-  const canonicalURL = `${process.env.NEXT_PUBLIC_SITEBASE_URL}/`;
-  let data = commonSeo(canonicalURL, seoData);
+const mono = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  display: "swap",
+});
 
-  const { response, ...seoObj } = data;
-  return {
-    ...seoObj,
-  };
-}
+export const viewport = {
+  themeColor: "#090a0f",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
+/* Site-wide defaults only. Each route supplies its own title, description
+   and canonical via commonSeo(path); Next merges page over layout. */
+export const metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${PERSON.name} — ${PERSON.jobTitle}`,
+    template: `%s`,
+  },
+  applicationName: SITE_NAME,
+  referrer: "origin-when-cross-origin",
+  formatDetection: { telephone: true, email: true, address: false },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/assets/img/gohar.jpg",
+  },
+  /* Paste the token from Google Search Console → HTML tag verification.
+     Left null so no empty meta tag is emitted until it exists. */
+  verification: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION
+    ? { google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION }
+    : undefined,
+};
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    // Browser extensions (ad blockers, window resizers, Grammarly…) inject
+    // attributes onto <html> before React hydrates. Suppressing here keeps
+    // those out of the hydration diff; it only covers this element's own
+    // attributes, so real mismatches inside the app still surface.
+    <html lang="en" suppressHydrationWarning>
       <head>
-        {/* ✅ Add GTM script inside <head> using next/script */}
         <Script
           id="google-tag-manager"
           strategy="afterInteractive"
@@ -44,9 +77,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${display.variable} ${body.variable} ${mono.variable}`}
       >
-        {/* ✅ Add GTM noscript in body */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TSJDPHDH"
@@ -56,9 +88,19 @@ export default function RootLayout({ children }) {
           ></iframe>
         </noscript>
 
-        <Home />
+        {/* Ambient backdrop — aurora, grain, hairline grid */}
+        <div className="atmosphere" aria-hidden="true">
+          <span className="aurora aurora--1" />
+          <span className="aurora aurora--2" />
+          <span className="aurora aurora--3" />
+          <span className="gridlines" />
+          <span className="grain" />
+        </div>
+
+        <Motion />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

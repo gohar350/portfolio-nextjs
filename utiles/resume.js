@@ -1,14 +1,15 @@
 export default {
   description:
-    "A passionate Frontend Engineer and React Developer with expertise in building scalable, high-performance web applications. AI-Powered Developer achieving 5x productivity with Claude AI.",
+    "A passionate Frontend Engineer and React Developer with expertise in building scalable, high-performance, SEO-optimized web applications. Proficient in AI Prompt Engineering using Claude AI, ChatGPT, and LLM-powered development tools.",
   summary: {
     name: "Muhammad Gohar",
     intro:
-      "Results-driven Frontend Engineer and React Developer with 2+ years of experience building scalable, high-performance, and SEO-optimized web applications. Expert in React.js, Next.js, TypeScript, and JavaScript (ES6+). AI-Powered Developer leveraging Claude AI for 5x productivity improvement.",
+      "Results-driven Frontend Engineer and React Developer with 3 years of experience building scalable, high-performance, and SEO-optimized web applications. Expert in React.js, Next.js, TypeScript, and JavaScript (ES6+) with deep knowledge of Server-Side Rendering (SSR), Static Site Generation (SSG), and Incremental Static Regeneration (ISR). Proficient in AI Prompt Engineering using Claude AI, ChatGPT, and LLM-powered development tools. Skilled in RESTful API integration and microservices architecture. Strong expertise in state management, responsive design, and test-driven development (TDD).",
     details: [
       "Lahore, Pakistan",
-      "+92 305-935-8248",
+      "+92 305 935 8248",
       "gohar350butt@gmail.com",
+      "https://muhammadgohar.vercel.app/",
     ],
   },
   education: [
@@ -18,25 +19,30 @@ export default {
       institution:
         "National University of Computing and Emerging Sciences (FAST-NUCES), Lahore, Pakistan",
       description:
-        "Minor in Project Management. Specialized in Web Development, Software Engineering, and scalable application design.",
+        "Minor in Project Management. Relevant coursework: Data Structures & Algorithms, Object-Oriented Programming, Database Systems, Software Engineering, Web Development, Machine Learning, Artificial Intelligence, Project Management.",
     },
   ],
   experience: [
     {
+      title: "Senior Software Engineer",
+      year: "March 2026 - Present",
+      company: "ElkTech, Lahore, Pakistan",
+      responsibilities: [
+        "Leveraged Claude Code, Claude AI, and GitHub Copilot to accelerate development, refactor legacy code, generate documentation, and improve engineering productivity",
+        "Utilized Claude Code to analyze large codebases, implement complex features, debug production issues, and support architectural decision-making",
+        "Led code reviews and mentored junior developers on React, Next.js, TypeScript, and software engineering best practices within an Agile/Scrum environment",
+      ],
+    },
+    {
       title: "Software Engineer",
-      year: "July 2023 - Present",
+      year: "July 2023 - February 2026",
       company: "Sixlogics, Lahore, Pakistan",
       responsibilities: [
-        "Achieved 5x development speed by integrating Claude AI and Claude Code CLI into daily workflow for code generation, debugging, and documentation",
-        "Architected and developed high-traffic live sports platforms (Racing and Sports UK, Betway Scores, Hollywood Bets) serving 100K+ daily active users",
-        "Built scalable frontend applications using Next.js 14, React.js 18, TypeScript, achieving 40% improvement in page load times",
+        "Architected and developed high-traffic live sports platforms (Racing and Sports UK, Betway Scores, Hollywood Bets Live Scores) serving 100K+ daily active users",
+        "Built scalable frontend applications using Next.js 16, React.js 18, TypeScript, and NestJS, achieving 40% improvement in page load times",
         "Implemented real-time data streaming pipelines with Apache Kafka for live sports data, ensuring sub-second latency",
-        "Created comprehensive Markdown documentation including README.md, API docs, and technical specifications for all projects",
         "Optimized SEO performance using structured data schemas (JSON-LD), dynamic XML sitemaps, resulting in 60% increase in organic traffic",
-        "Managed complex state using React Query, Redux Toolkit, and Context API, improving caching efficiency by 35%",
-        "Developed reusable component libraries with TailwindCSS and Shadcn/UI, reducing development time by 25%",
-        "Leveraged AI prompt engineering to automate repetitive tasks, generate boilerplate code, and create unit tests",
-        "Led code reviews and mentored junior developers on React best practices and AI-assisted development",
+        "Managed complex application state using React Query, Redux Toolkit, and Context API, improving caching efficiency by 35%",
       ],
     },
     {
@@ -44,12 +50,7 @@ export default {
       year: "September 2022 - March 2023",
       company: "The Dev Corporate, Lahore, Pakistan",
       responsibilities: [
-        "Developed and maintained responsive web applications using React.js and JavaScript (ES6+)",
-        "Built reusable UI component libraries following atomic design principles, improving code reusability by 30%",
-        "Optimized frontend performance through lazy loading, code splitting, and bundle size optimization",
-        "Basic backend integration with Node.js APIs for data fetching and form submissions",
-        "Wrote unit tests using Jest and React Testing Library, maintaining 80%+ code coverage",
-        "Created project documentation in Markdown format for team knowledge sharing",
+        "Developed and maintained responsive web applications using React.js, Node.js, and JavaScript (ES6+)",
       ],
     },
     {
@@ -57,8 +58,8 @@ export default {
       year: "June 2022 - July 2022",
       company: "ICOMMUNIX, Lahore, Pakistan",
       responsibilities: [
-        "Built and optimized deep learning models using TensorFlow, Keras, and AWS SageMaker",
-        "Achieved 20% reduction in model training times through hyperparameter tuning and optimization",
+        "Built and optimized deep learning models using TensorFlow, Keras, and AWS SageMaker for predictive analytics",
+        "Achieved 20% reduction in model training times through hyperparameter tuning and data pipeline optimization",
       ],
     },
     {
@@ -66,51 +67,38 @@ export default {
       year: "January 2022 - March 2022",
       company: "Devsinc, Lahore, Pakistan",
       responsibilities: [
-        "Completed Ruby on Rails bootcamp; gained basic understanding of MVC architecture and RESTful APIs",
+        "Completed intensive Ruby on Rails bootcamp and built full-stack CRUD applications with MVC architecture",
         "Collaborated with cross-functional teams to align technical solutions with business requirements",
       ],
     },
   ],
   projects: [
     {
-      title: "SSR Widget - Micro Frontend (Featured)",
-      tech: "Next.js 14, TypeScript, Micro Frontend, SSR, Kafka, Microservices",
-      responsibilities: [
-        "My biggest achievement - Embeddable micro-frontend sports aggregation platform",
-        "Live scores, stats, and updates across 8+ major sports with widget architecture",
-        "Modular design allowing seamless integration into third-party websites",
-      ],
-    },
-    {
       title: "Racing and Sports UK",
       tech: "Next.js 14, TypeScript, React Query, TailwindCSS, Kafka",
       responsibilities: [
-        "Real-time sports platform with SSR, JSON-LD schemas, dynamic sitemaps",
-        "Comprehensive README.md created using Claude AI",
+        "Real-time sports betting platform with SSR, JSON-LD schemas, and dynamic XML sitemaps for optimal SEO",
       ],
     },
     {
       title: "Betway Scores & Hollywood Bets Live Score",
       tech: "React.js, Next.js, Redux Toolkit, WebSockets",
       responsibilities: [
-        "Dynamic live score apps with real-time API integration, 90+ Lighthouse scores",
-        "Markdown documentation for components and APIs",
+        "Dynamic live score applications with real-time API integration, achieving 90+ Lighthouse scores",
       ],
     },
     {
       title: "IPublisher - Multi-Sport Live Centers",
       tech: "Next.js, React.js, TypeScript, Kafka, Microservices",
       responsibilities: [
-        "Platform for 9+ sports: Football, Cricket, Rugby, Basketball, Ice Hockey, Tennis, Horse Racing, Greyhound Racing, F1",
-        "Extensive MD documentation",
+        "Comprehensive platform covering 9+ sports: Football, Cricket, Rugby, Basketball, Ice Hockey, Tennis, Horse Racing, Greyhound Racing, Formula 1",
       ],
     },
     {
-      title: "Score Mania, Planet Sports, Football First",
+      title: "Score Mania & Planet Sports & Football First",
       tech: "React.js, Custom Hooks, TailwindCSS, SSR",
       responsibilities: [
-        "Multi-sport live platforms with mobile-first design and caching strategies",
-        "Mermaid architecture diagrams in Markdown",
+        "Multi-sport live platforms with mobile-first responsive design and advanced caching strategies",
       ],
     },
   ],
@@ -125,18 +113,18 @@ export default {
     "Redux Toolkit",
     "React Query",
     "TailwindCSS",
-    "Shadcn/UI",
+    "Material UI",
     "Apache Kafka",
     "WebSockets",
     "Node.js",
     "NestJS",
     "REST APIs",
-    "GraphQL",
-    "MongoDB",
-    "PostgreSQL",
+    "Microservices",
     "Technical SEO",
     "Claude AI",
+    "Claude Code CLI",
     "Prompt Engineering",
+    "TDD",
   ],
   certifications: [
     {
@@ -145,7 +133,7 @@ export default {
       year: "2023",
     },
     {
-      name: "Next.js & React Complete Guide",
+      name: "Next.js & React - The Complete Guide",
       institution: "Online",
       year: "2023",
     },
@@ -160,14 +148,9 @@ export default {
       year: "2024",
     },
     {
-      name: "Claude AI & LLM Development",
+      name: "AWS Cloud Practitioner Fundamentals",
       institution: "Online",
-      year: "2024",
-    },
-    {
-      name: "Technical Writing and Documentation",
-      institution: "Online",
-      year: "2024",
+      year: "",
     },
   ],
   languages: ["English: Proficient", "Urdu: Native"],
@@ -181,7 +164,7 @@ export default {
   aiWorkflow: [
     { step: "1. Requirements", desc: "Claude for clarification" },
     { step: "2. Architecture", desc: "AI-assisted design" },
-    { step: "3. Code Generation", desc: "5x faster with Claude Code CLI" },
+    { step: "3. Code Generation", desc: "2x faster with Claude Code CLI" },
     { step: "4. Testing", desc: "AI-generated test cases" },
     { step: "5. Documentation", desc: "Auto-generated MD files, README" },
     { step: "6. Code Review", desc: "Claude-powered review" },

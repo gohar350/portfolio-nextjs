@@ -1,28 +1,32 @@
 export default {
   stats: [
     {
-      icon: "bi bi-emoji-smile",
+      icon: "bi bi-people",
       value: 100,
-      title: "Happy Clients",
-      description: "100K+ DAU",
+      suffix: "K+",
+      title: "Daily users",
+      description: "Across live sports platforms",
     },
     {
       icon: "bi bi-journal-richtext",
       value: 15,
-      title: "Projects",
-      description: "Live Sports Platforms",
+      suffix: "",
+      title: "Projects shipped",
+      description: "Live sports platforms",
     },
     {
       icon: "bi bi-robot",
-      value: 5,
-      title: "AI Productivity",
-      description: "5x Development Speed",
+      value: 2,
+      suffix: "x",
+      title: "AI productivity",
+      description: "Development speed",
     },
     {
       icon: "bi bi-lightning-charge",
       value: 40,
-      title: "Performance",
-      description: "% Faster Load Times",
+      suffix: "%",
+      title: "Faster loads",
+      description: "Page load improvement",
     },
   ],
   skills: [
@@ -31,20 +35,20 @@ export default {
     { name: "React.js", percentage: 95 },
     { name: "Next.js 14", percentage: 95 },
     { name: "Redux Toolkit / React Query", percentage: 90 },
-    { name: "TailwindCSS / Shadcn UI", percentage: 90 },
+    { name: "TailwindCSS / SCSS / Material UI", percentage: 90 },
     { name: "SSR / SSG / ISR", percentage: 85 },
     { name: "Claude AI & Prompt Engineering", percentage: 95 },
     { name: "Apache Kafka / WebSockets", percentage: 80 },
     { name: "SEO & Core Web Vitals", percentage: 85 },
-    { name: "Node.js / NestJS (Basic)", percentage: 60 },
-    { name: "MongoDB / PostgreSQL (Basic)", percentage: 55 },
+    { name: "Testing & TDD (Jest, Cypress, Playwright)", percentage: 80 },
+    { name: "Node.js / NestJS", percentage: 60 },
   ],
   aiExpertise: [
     {
       icon: "bi bi-robot",
       title: "Claude AI & Claude Code CLI",
       description:
-        "Daily driver for AI-assisted development, achieving 5x productivity improvement in coding, debugging, and documentation tasks",
+        "Daily driver for AI-assisted development — analysing large codebases, implementing complex features, debugging production issues, and generating technical documentation",
     },
     {
       icon: "bi bi-chat-dots",
@@ -56,7 +60,7 @@ export default {
       icon: "bi bi-plugin",
       title: "MCP (Model Context Protocol)",
       description:
-        "Building custom MCP servers and integrating file system, database, and API tools with Claude for enhanced AI workflows",
+        "Experience with Claude's MCP for building AI-powered tools and integrations across file system, database, and API surfaces",
     },
     {
       icon: "bi bi-gear-wide-connected",
@@ -68,13 +72,13 @@ export default {
       icon: "bi bi-code-square",
       title: "AI Code Assistants",
       description:
-        "GitHub Copilot, Cursor AI, Codeium, Amazon CodeWhisperer for accelerated development",
+        "GitHub Copilot, Cursor AI, and Claude for 2x productivity improvement across development workflows",
     },
     {
       icon: "bi bi-braces",
       title: "LLM Integration",
       description:
-        "OpenAI API, Anthropic API, LangChain for building AI-powered applications",
+        "OpenAI API, Anthropic API, and LangChain for building AI-powered applications",
     },
   ],
   technicalSkills: {
@@ -89,6 +93,7 @@ export default {
       "ISR",
       "SPA",
       "PWA",
+      "Responsive Design",
     ],
     stateManagement: [
       "Redux Toolkit",
@@ -102,8 +107,6 @@ export default {
       "SCSS/SASS",
       "Styled Components",
       "Material UI",
-      "Shadcn/UI",
-      "Framer Motion",
     ],
     realTime: [
       "Apache Kafka",
@@ -111,20 +114,22 @@ export default {
       "Server-Sent Events (SSE)",
       "Event-Driven Architecture",
     ],
-    backend: [
-      "Node.js",
-      "NestJS",
-      "Express.js",
-      "REST APIs",
-      "GraphQL",
-      "Microservices",
+    backend: ["Node.js", "NestJS", "REST APIs", "Microservices"],
+    ai: [
+      "Claude AI",
+      "Claude Code CLI",
+      "ChatGPT",
+      "OpenAI API",
+      "LangChain",
+      "MCP",
+      "GitHub Copilot",
+      "Cursor AI",
     ],
-    database: ["MongoDB", "PostgreSQL", "Firebase", "Supabase"],
     devops: [
       "Git",
       "GitHub",
-      "Docker (Basic)",
-      "AWS (Basic)",
+      "Docker",
+      "AWS (EC2, S3, Lambda, SageMaker)",
       "Vercel",
       "Netlify",
       "CI/CD",
@@ -137,13 +142,24 @@ export default {
       "Playwright",
       "E2E Testing",
       "TDD",
+      "Unit Testing",
     ],
     seo: [
       "Technical SEO",
       "Schema Markup (JSON-LD)",
       "XML Sitemaps",
       "Core Web Vitals",
+      "Lighthouse",
       "Code Splitting",
+    ],
+    practices: [
+      "Agile",
+      "Scrum",
+      "JIRA",
+      "Code Review",
+      "Clean Code",
+      "SOLID Principles",
+      "Documentation (Markdown)",
     ],
   },
 };

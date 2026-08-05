@@ -1,89 +1,118 @@
-import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Typewriter from "@/components/effects/Typewriter";
+import contact from "@/utiles/contact";
 
-const Landing = () => {
+const ROLES = [
+  "Frontend Engineer",
+  "React Developer",
+  "Next.js Specialist",
+  "AI Prompt Engineer",
+  "TypeScript Developer",
+];
+
+const MARQUEE = [
+  "React.js",
+  "Next.js",
+  "TypeScript",
+  "Apache Kafka",
+  "Claude Code",
+  "TailwindCSS",
+  "Redux Toolkit",
+  "React Query",
+  "NestJS",
+  "WebSockets",
+  "SSR / SSG / ISR",
+  "Core Web Vitals",
+];
+
+export default function Landing() {
   return (
-    <section id="hero" className="hero section dark-background">
-      <Image src="/assets/img/bg-gohar.jpg" alt="" fill priority />
-      <div className="hero-overlay"></div>
-      <div className="container hero-content">
-        <div className="hero-badge" data-aos="fade-down" data-aos-delay="100">
-          <span className="badge-icon">
-            <i className="bi bi-robot"></i>
-          </span>
-          <span className="badge-text">AI-Powered Developer</span>
-        </div>
-        <h2 data-aos="fade-up" data-aos-delay="200">
-          Muhammad Gohar
-        </h2>
-        <p data-aos="fade-up" data-aos-delay="300">
-          I'm a{" "}
-          <span
-            className="typed"
-            data-typed-items="Frontend Engineer!, React Developer!, Next.js Expert!, AI Prompt Engineer!, TypeScript Developer!, Claude AI Power User!, SEO Specialist!, Full-Stack Developer!"
-          >
-            Frontend Engineer!
-          </span>
-          <span
-            className="typed-cursor typed-cursor--blink"
-            aria-hidden="true"
-          ></span>
-        </p>
-        <div className="hero-stats" data-aos="fade-up" data-aos-delay="400">
-          <div className="stat-item">
-            <span className="stat-number">5x</span>
-            <span className="stat-label">AI Productivity</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">100K+</span>
-            <span className="stat-label">Daily Users</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">2+</span>
-            <span className="stat-label">Years Exp</span>
-          </div>
-        </div>
-        <div className="hero-cta" data-aos="fade-up" data-aos-delay="500">
-          <Link href="/portfolio" className="cta-button primary">
-            <i className="bi bi-briefcase"></i> View Projects
-          </Link>
-          <Link href="/contact" className="cta-button secondary">
-            <i className="bi bi-envelope"></i> Contact Me
-          </Link>
-        </div>
-        <div className="social-links" data-aos="fade-up" data-aos-delay="600">
-          <Link
-            href="https://www.linkedin.com/in/gohar-butt-390122209/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <i className="bi bi-linkedin"></i>
-          </Link>
-          <Link
-            href="https://github.com/gohar350"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <i className="bi bi-github"></i>
-          </Link>
-          <Link href="mailto:gohar350butt@gmail.com" aria-label="Email">
-            <i className="bi bi-envelope-fill"></i>
-          </Link>
-        </div>
-      </div>
-      <div
-        className="hero-scroll-indicator"
-        data-aos="fade-up"
-        data-aos-delay="700"
-      >
-        <span>Scroll Down</span>
-        <i className="bi bi-chevron-double-down"></i>
-      </div>
-    </section>
-  );
-};
+    <>
+      <section className="hero" id="top">
+        <div className="shell">
+          <p className="hero__status">
+            <span className="pulse" aria-hidden="true" />
+            Senior Software Engineer · ElkTech
+          </p>
 
-export default Landing;
+          <h1>
+            Muhammad <span className="grad">Gohar</span>
+          </h1>
+
+          <p className="hero__role">
+            <span className="sr-only">Roles: </span>
+            <Typewriter words={ROLES} />
+          </p>
+
+          <p className="hero__lede">
+            I build real-time, SEO-first web platforms — live sports products
+            serving <strong>100K+ daily users</strong>, engineered with React,
+            Next.js and TypeScript, and shipped faster with AI in the loop.
+          </p>
+
+          <div className="hero__actions">
+            <Link href="/portfolio" className="btn btn--primary">
+              <i className="bi bi-grid" aria-hidden="true" />
+              View selected work
+            </Link>
+            <a href={`mailto:${contact.email}`} className="btn btn--ghost">
+              <i className="bi bi-send" aria-hidden="true" />
+              Start a conversation
+            </a>
+          </div>
+
+          <div className="metrics" data-reveal>
+            <div className="metric">
+              <div className="metric__val">
+                <span data-count="3">3</span>
+              </div>
+              <div className="metric__label">Years shipping</div>
+            </div>
+            <div className="metric">
+              <div className="metric__val">
+                <span data-count="100" data-suffix="K+">
+                  100K+
+                </span>
+              </div>
+              <div className="metric__label">Daily users</div>
+            </div>
+            <div className="metric">
+              <div className="metric__val">
+                <span data-count="2" data-suffix="x">
+                  2x
+                </span>
+              </div>
+              <div className="metric__label">AI productivity</div>
+            </div>
+            <div className="metric">
+              <div className="metric__val">
+                <span data-count="40" data-suffix="%">
+                  40%
+                </span>
+              </div>
+              <div className="metric__label">Faster loads</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="hero__scroll" aria-hidden="true">
+          <span>Scroll</span>
+          <i className="bi bi-chevron-down" />
+        </div>
+      </section>
+
+      <div className="marquee" aria-hidden="true">
+        <div className="marquee__track">
+          {/* duplicated once so the -50% translate loops seamlessly */}
+          {[0, 1].map((dup) =>
+            MARQUEE.map((m) => (
+              <span className="marquee__item" key={`${dup}-${m}`}>
+                {m}
+              </span>
+            ))
+          )}
+        </div>
+      </div>
+    </>
+  );
+}

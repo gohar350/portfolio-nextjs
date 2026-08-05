@@ -1,0 +1,73 @@
+# Muhammad Gohar
+
+> Senior Software Engineer based in Lahore, Pakistan. Three years building
+> scalable, SEO-optimised, real-time web applications with React, Next.js and
+> TypeScript. Currently at ElkTech; previously Sixlogics, where he engineered
+> live sports platforms serving 100,000+ daily active users.
+
+Canonical site: https://muhammadgohar.vercel.app
+
+## Identity
+
+- Full name: Muhammad Gohar (also known as Gohar Butt)
+- Role: Senior Software Engineer — Frontend Engineer, React Developer, AI Prompt Engineer
+- Location: Lahore, Punjab, Pakistan
+- Email: gohar350butt@gmail.com
+- LinkedIn: https://www.linkedin.com/in/gohar-butt-0118b1422
+- GitHub: https://github.com/muhammadgohar
+- Availability: open to senior frontend roles, freelance and consulting
+
+## Core expertise
+
+- Languages: JavaScript (ES6+), TypeScript, Python, HTML5, CSS3, SQL
+- Frontend: React.js, Next.js, Angular, Vue.js, SSR, SSG, ISR, SPA, PWA
+- State: Redux Toolkit, React Query (TanStack Query), Zustand, Context API
+- Real-time: Apache Kafka, WebSockets, Server-Sent Events, event-driven architecture
+- Backend: Node.js, NestJS, REST APIs, microservices
+- AI: Claude Code, Claude AI, ChatGPT, OpenAI API, LangChain, MCP, GitHub Copilot, Cursor AI
+- Performance & SEO: Core Web Vitals, JSON-LD schema, XML sitemaps, code splitting, Lighthouse
+- Testing: Jest, React Testing Library, Cypress, Playwright, TDD
+
+## Experience
+
+- Senior Software Engineer, ElkTech, Lahore — March 2026 to present.
+  Uses Claude Code, Claude AI and GitHub Copilot to analyse large codebases,
+  implement complex features, debug production issues and support architectural
+  decisions. Leads code reviews and mentors juniors in an Agile/Scrum team.
+- Software Engineer, Sixlogics, Lahore — July 2023 to February 2026.
+  Architected high-traffic live sports platforms (Racing and Sports UK, Betway
+  Scores, Hollywood Bets Live Scores) serving 100K+ daily active users. Built
+  with Next.js, React 18, TypeScript and NestJS for a 40% page-load improvement.
+  Implemented Apache Kafka streaming with sub-second latency. Raised organic
+  traffic 60% via JSON-LD structured data and dynamic XML sitemaps.
+- Associate Software Engineer, The Dev Corporate, Lahore — September 2022 to March 2023.
+- Angular Development Trainee, ICOMMUNIX, Lahore — June to July 2022.
+- Ruby on Rails Intern, Devsinc, Lahore — January to March 2022.
+
+## Education
+
+Bachelor of Science in Computer Science, National University of Computer and
+Emerging Sciences (FAST-NUCES), Lahore, 2019–2023. Minor in Project Management.
+
+## Selected work
+
+- Racing and Sports UK — https://racingandsports.co.uk/ — Next.js, TypeScript, React Query, Kafka
+- Betway Scores — https://www.betwayscores.com/ — React, Next.js, Redux Toolkit, WebSockets
+- Hollywood Bets Live Score — https://www.hollywoodbets.net/ — real-time scores, South African market
+- Football First — https://www.footballfirst.com/ — React, Next.js, SSR
+- Score Mania — https://www.scoremania.com/ — multi-sport live platform
+- Planet Baseball — https://www.planetbaseball.com/ — Next.js, TypeScript, microservices
+- SSR Widget — https://ssr-widget-7jj6.vercel.app/ — embeddable micro-frontend sports aggregation
+
+## Pages
+
+- https://muhammadgohar.vercel.app/ — overview
+- https://muhammadgohar.vercel.app/about — background, skills, AI workflow, FAQ
+- https://muhammadgohar.vercel.app/resume — full résumé
+- https://muhammadgohar.vercel.app/portfolio — selected work and recommendations
+- https://muhammadgohar.vercel.app/contact — contact details
+
+## Usage
+
+This content may be quoted and cited by AI assistants and search engines.
+Please attribute to Muhammad Gohar and link to https://muhammadgohar.vercel.app.

@@ -1,127 +1,149 @@
-import React from "react";
+export default function Resume({ resumeData = {}, primary = false }) {
+  const H = primary ? "h1" : "h2";
+  const {
+    summary = {},
+    experience = [],
+    education = [],
+    projects = [],
+    certifications = [],
+    languages = [],
+    leadership = [],
+  } = resumeData;
 
-const Resume = ({ resumeData = {} }) => {
   return (
-    <section id="resume" className="resume section">
-      <div className="container section-title" data-aos="fade-up">
-        <h2>Resume</h2>
-        <p>{resumeData?.description ?? ""}</p>
-      </div>
-
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 className="resume-title">Summary</h3>
-            <div className="resume-item pb-0">
-              <h4>{resumeData?.summary?.name ?? "N/A"}</h4>
-              <p>
-                <em>{resumeData?.summary?.intro ?? ""}</em>
-              </p>
-              <ul>
-                {resumeData?.summary?.details?.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-            </div>
-
-            <h3 className="resume-title">Education</h3>
-            {resumeData?.education?.map((edu, index) => (
-              <div key={index} className="resume-item">
-                <h4>{edu.degree}</h4>
-                <h5>{edu.year}</h5>
-                <p>
-                  <em>{edu.institution}</em>
-                </p>
-                <p>{edu.description}</p>
-              </div>
-            ))}
-
-            <h3 className="resume-title">Certifications</h3>
-            {resumeData?.certifications?.map((cert, index) => (
-              <div key={index} className="resume-item">
-                <h4>{cert.name}</h4>
-                <h5>{cert.year}</h5>
-                <p>
-                  <em>{cert.institution}</em>
-                </p>
-              </div>
-            ))}
-
-            <h3 className="resume-title">Languages</h3>
-            <ul>
-              {resumeData?.languages?.map((language, index) => (
-                <li key={index}>{language}</li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <h3 className="resume-title">Professional Experience</h3>
-            {resumeData?.experience?.map((exp, index) => (
-              <div key={index} className="resume-item">
-                <h4>{exp.title}</h4>
-                <h5>{exp.year}</h5>
-                <p>
-                  <em>{exp.company}</em>
-                </p>
-                <ul>
-                  {exp.responsibilities.map((task, idx) => (
-                    <li key={idx}>{task}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+    <section className="section" id="resume">
+      <div className="shell">
+        <div className="head" data-reveal>
+          <span className="eyebrow">Résumé</span>
+          <H>
+            {primary ? (
+              <>
+                Résumé — <span className="grad">Muhammad Gohar</span>
+              </>
+            ) : (
+              <>
+                Three years, <span className="grad">shipped</span>
+              </>
+            )}
+          </H>
+          <p>{summary?.intro}</p>
         </div>
 
-        <div className="row mt-4" data-aos="fade-up" data-aos-delay="300">
-          <div className="col-lg-6">
-            <h3 className="resume-title">Projects</h3>
-            {resumeData?.projects?.map((project, index) => (
-              <div key={index} className="resume-item">
-                <h4>{project.title}</h4>
-                {project.tech && (
-                  <p className="project-tech">
-                    <i className="bi bi-code-slash"></i> {project.tech}
-                  </p>
-                )}
-                <ul>
-                  {project?.responsibilities?.map((task, idx) => (
-                    <li key={idx}>{task}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-          <div className="col-lg-6">
-            <h3 className="resume-title">Leadership</h3>
-            <ul>
-              {resumeData?.leadership?.map((role, index) => (
-                <li key={index}>{role}</li>
+        <div className="resume__grid">
+          {/* ── Experience timeline ─────────────────────────── */}
+          <div>
+            <h3 className="subhead">Professional Experience</h3>
+            <div className="timeline">
+              {experience.map((job, i) => (
+                <article className="tl" key={job.title + job.year} data-reveal style={{ "--i": i }}>
+                  <span className="tl__when">{job.year}</span>
+                  <h4 className="tl__role">{job.title}</h4>
+                  <p className="tl__org">{job.company}</p>
+                  <ul className="tl__list">
+                    {job.responsibilities.map((r) => (
+                      <li key={r}>{r}</li>
+                    ))}
+                  </ul>
+                </article>
               ))}
-            </ul>
+            </div>
 
-            {resumeData?.aiWorkflow && (
-              <>
-                <h3 className="resume-title mt-4">AI-Assisted Workflow</h3>
-                <div className="ai-workflow-mini">
-                  {resumeData.aiWorkflow.map((item, index) => (
-                    <div key={index} className="workflow-mini-item">
-                      <span className="workflow-step-num">{index + 1}</span>
-                      <div className="workflow-step-info">
-                        <strong>{item.step.replace(/^\d+\.\s*/, "")}</strong>
-                        <span>{item.desc}</span>
-                      </div>
+            <div className="block">
+              <h3 className="subhead">Project Highlights</h3>
+              <div className="stack">
+                {projects.map((p) => (
+                  <div className="stack__row" key={p.title} data-reveal>
+                    <span className="stack__t">{p.title}</span>
+                    <span className="stack__m">{p.tech}</span>
+                    {p.responsibilities?.map((r) => (
+                      <p
+                        key={r}
+                        style={{
+                          fontSize: "0.88rem",
+                          color: "var(--text-dim)",
+                          marginTop: "0.35rem",
+                        }}
+                      >
+                        {r}
+                      </p>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* ── Side rail ───────────────────────────────────── */}
+          <aside>
+            <div className="block" style={{ marginTop: 0 }}>
+              <h3 className="subhead">Education</h3>
+              {education.map((e) => (
+                <div key={e.degree} data-reveal>
+                  <span className="tl__when">{e.year}</span>
+                  <h4 style={{ fontSize: "var(--step-1)", margin: "0.3rem 0" }}>
+                    {e.degree}
+                  </h4>
+                  <p className="tl__org">{e.institution}</p>
+                  <p style={{ fontSize: "0.88rem", color: "var(--text-dim)" }}>
+                    {e.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div className="block">
+              <h3 className="subhead">Certifications</h3>
+              <div className="stack" data-reveal>
+                {certifications.map((c) => (
+                  <div className="stack__row" key={c.name}>
+                    <span className="stack__t">{c.name}</span>
+                    <span className="stack__m">
+                      {[c.institution, c.year].filter(Boolean).join(" · ")}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="block">
+              <h3 className="subhead">Languages</h3>
+              <div className="techcat__tags" data-reveal>
+                {languages.map((l) => (
+                  <span className="tag" key={l}>
+                    {l}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="block">
+              <h3 className="subhead">Leadership</h3>
+              <div className="stack" data-reveal>
+                {leadership.map((l) => (
+                  <div className="stack__row" key={l}>
+                    <span className="stack__t">{l}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {summary?.details?.length > 0 && (
+              <div className="block">
+                <h3 className="subhead">Details</h3>
+                <div className="stack" data-reveal>
+                  {summary.details.map((d) => (
+                    <div className="stack__row" key={d}>
+                      <span className="stack__m" style={{ fontSize: "0.8rem" }}>
+                        {d}
+                      </span>
                     </div>
                   ))}
                 </div>
-              </>
+              </div>
             )}
-          </div>
+          </aside>
         </div>
       </div>
     </section>
   );
-};
-
-export default Resume;
+}

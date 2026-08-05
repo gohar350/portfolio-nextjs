@@ -6,7 +6,8 @@ export default [
     tech: "Next.js 14, TypeScript, Micro Frontend, SSR, Kafka, Microservices",
     description: "My biggest achievement - A micro-frontend sports aggregation platform with live scores, stats, and updates across 8+ major sports. Embeddable widget architecture.",
     link: "https://ssr-widget-7jj6.vercel.app/",
-    thumbnail: "https://ssr-widget-7jj6.vercel.app/favicon.ico",
+    // No brand logo for this one — the card renders a typographic wordmark.
+    thumbnail: null,
     featured: true,
   },
   {
