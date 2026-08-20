@@ -16,12 +16,12 @@ const getAge = () => {
 export default {
   title: "About",
 
-  des: "Results-driven Frontend Engineer and React Developer with 3 years of experience building scalable, high-performance, and SEO-optimized web applications. Expert in React.js, Next.js, TypeScript, and JavaScript (ES6+) with deep knowledge of Server-Side Rendering (SSR), Static Site Generation (SSG), and Incremental Static Regeneration (ISR). Proficient in AI Prompt Engineering using Claude AI, ChatGPT, and LLM-powered development tools, with strong expertise in state management, responsive design, and test-driven development (TDD).",
+  des: "Results-driven Full Stack Engineer with 3 years of experience building scalable, high-performance, and SEO-optimized web applications. Expert in React.js, Next.js, TypeScript, and JavaScript (ES6+) with deep knowledge of Server-Side Rendering (SSR), Static Site Generation (SSG), and Incremental Static Regeneration (ISR). Proficient in AI Prompt Engineering using Claude AI, ChatGPT, and LLM-powered development tools, with strong expertise in state management, responsive design, and test-driven development (TDD).",
   img: "/assets/img/gohar.jpg",
   role: {
-    name: "Frontend Engineer | React Developer | AI Prompt Engineer",
+    name: "Full Stack Engineer | React & Node.js | AI Prompt Engineer",
     intro:
-      "Senior Software Engineer using Claude Code, Claude AI, and GitHub Copilot to accelerate development, refactor legacy code, analyse large codebases, and support architectural decision-making. Proficient in AI Prompt Engineering, MCP (Model Context Protocol) tools integration, and creating comprehensive Markdown documentation. Expert in React.js, Next.js 14, TypeScript, and modern JavaScript with deep knowledge of SSR, SSG, and ISR, plus RESTful API integration and microservices architecture.",
+      "Senior Full Stack Engineer using Claude Code, Claude AI, and GitHub Copilot to accelerate development, refactor legacy code, analyse large codebases, and support architectural decision-making. Proficient in AI Prompt Engineering, MCP (Model Context Protocol) tools integration, and creating comprehensive Markdown documentation. Works across the stack: React.js, Next.js and TypeScript on the client, Node.js and NestJS services, RESTful APIs and microservices architecture on the server, with deep knowledge of SSR, SSG and ISR.",
     info: [
       { label: "Birthday", link: null, value: "9 Nov, 2000" },
       {
@@ -42,5 +42,5 @@ export default {
     ],
   },
   description:
-    "I specialize in building high-performance, SEO-optimized web applications using React.js, Next.js, and TypeScript. With expertise in AI-assisted development using Claude Code and Claude AI, I achieve 2x productivity improvement in coding, debugging, and documentation tasks.",
+    "I build high-performance, SEO-optimized web applications end to end — React.js, Next.js and TypeScript on the client, Node.js and NestJS services, REST APIs and databases behind them. With AI-assisted development using Claude Code and Claude AI, I achieve 2x productivity improvement in coding, debugging, and documentation tasks.",
 };

@@ -75,7 +75,7 @@ const personNode = {
   alternateName: "Gohar Butt",
   url: SITE_URL,
   image: { "@type": "ImageObject", url: abs(PERSON.image) },
-  jobTitle: PERSON.jobTitle,
+  jobTitle: PERSON.jobTitles ?? PERSON.jobTitle,
   description: getPageSeo("/").description,
   email: `mailto:${PERSON.email}`,
   telephone: PERSON.telephone,

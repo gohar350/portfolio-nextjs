@@ -3,9 +3,10 @@ import Typewriter from "@/components/effects/Typewriter";
 import contact from "@/utiles/contact";
 
 const ROLES = [
-  "Frontend Engineer",
+  "Full Stack Engineer",
   "React Developer",
   "Next.js Specialist",
+  "Node.js & NestJS Developer",
   "AI Prompt Engineer",
   "TypeScript Developer",
 ];
@@ -19,7 +20,11 @@ const MARQUEE = [
   "TailwindCSS",
   "Redux Toolkit",
   "React Query",
+  "Node.js",
   "NestJS",
+  "PostgreSQL",
+  "MongoDB",
+  "REST APIs",
   "WebSockets",
   "SSR / SSG / ISR",
   "Core Web Vitals",
@@ -45,9 +50,10 @@ export default function Landing() {
           </p>
 
           <p className="hero__lede">
-            I build real-time, SEO-first web platforms — live sports products
-            serving <strong>100K+ daily users</strong>, engineered with React,
-            Next.js and TypeScript, and shipped faster with AI in the loop.
+            I build real-time, SEO-first web platforms end to end — live sports
+            products serving <strong>100K+ daily users</strong>, from React and
+            Next.js interfaces down to Node.js services, APIs and data pipelines,
+            shipped faster with AI in the loop.
           </p>
 
           <div className="hero__actions">

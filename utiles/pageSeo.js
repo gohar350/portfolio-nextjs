@@ -10,19 +10,19 @@
 export const PAGE_SEO = {
   "/": {
     title:
-      "Muhammad Gohar — Frontend Engineer & React Developer in Lahore",
+      "Muhammad Gohar — Full Stack Engineer in Lahore, Pakistan",
     description:
-      "Muhammad Gohar is a Senior Software Engineer in Lahore, Pakistan with 3 years building React, Next.js and TypeScript platforms serving 100K+ daily users. Available for senior frontend roles.",
+      "Muhammad Gohar is a Senior Full Stack Engineer in Lahore, Pakistan with 3 years building React, Next.js, TypeScript and Node.js platforms serving 100K+ daily users. Available for senior full stack roles.",
   },
   "/about": {
-    title: "About Muhammad Gohar — React & Next.js Engineer, Lahore",
+    title: "About Muhammad Gohar — Full Stack Engineer, Lahore",
     description:
-      "Background, skills and AI-assisted workflow of Muhammad Gohar: FAST-NUCES computer science graduate, Senior Software Engineer at ElkTech, specialising in SSR, Core Web Vitals and real-time data.",
+      "Background, skills and AI-assisted workflow of Muhammad Gohar: FAST-NUCES computer science graduate and Senior Full Stack Engineer at ElkTech, working across React, Next.js, Node.js, NestJS and real-time data.",
   },
   "/resume": {
-    title: "Muhammad Gohar Résumé — Senior Software Engineer",
+    title: "Muhammad Gohar Résumé — Senior Full Stack Engineer",
     description:
-      "Full résumé of Muhammad Gohar: Senior Software Engineer at ElkTech, previously Sixlogics, The Dev Corporate and Devsinc. React, Next.js, TypeScript, Apache Kafka, NestJS and AI-assisted delivery.",
+      "Full résumé of Muhammad Gohar: Senior Full Stack Engineer at ElkTech, previously Sixlogics, The Dev Corporate and Devsinc. React, Next.js, TypeScript, Node.js, NestJS, Apache Kafka and AI-assisted delivery.",
   },
   "/portfolio": {
     title: "Portfolio — Live Sports Platforms by Muhammad Gohar",
@@ -30,9 +30,9 @@ export const PAGE_SEO = {
       "Selected work by Muhammad Gohar: Racing and Sports UK, Betway Scores, Hollywood Bets, Football First and Score Mania — real-time platforms with 90+ Lighthouse scores and 100K+ daily users.",
   },
   "/contact": {
-    title: "Contact Muhammad Gohar — Frontend Engineer for Hire",
+    title: "Contact Muhammad Gohar — Full Stack Engineer for Hire",
     description:
-      "Get in touch with Muhammad Gohar, Senior Software Engineer in Lahore, Pakistan. Open to senior frontend roles, freelance builds and consulting on performance, SEO and AI-assisted delivery.",
+      "Get in touch with Muhammad Gohar, Senior Full Stack Engineer in Lahore, Pakistan. Open to senior full stack roles, freelance builds and consulting on performance, SEO and AI-assisted delivery.",
   },
 };
 
@@ -46,11 +46,11 @@ export const getPageSeo = (path) => PAGE_SEO[path] ?? PAGE_SEO["/"];
 export const FAQS = [
   {
     q: "Who is Muhammad Gohar?",
-    a: "Muhammad Gohar is a Senior Software Engineer based in Lahore, Pakistan, with 3 years of professional experience building scalable, SEO-optimised web applications. He currently works at ElkTech and previously spent nearly three years at Sixlogics engineering live sports platforms that serve over 100,000 daily active users.",
+    a: "Muhammad Gohar is a Senior Full Stack Engineer based in Lahore, Pakistan, with 3 years of professional experience building scalable, SEO-optimised web applications end to end — from React and Next.js interfaces through to Node.js and NestJS services, APIs and databases. He currently works at ElkTech and previously spent nearly three years at Sixlogics engineering live sports platforms that serve over 100,000 daily active users.",
   },
   {
     q: "What technologies does Muhammad Gohar specialise in?",
-    a: "He specialises in React.js, Next.js, TypeScript and JavaScript (ES6+), with deep knowledge of Server-Side Rendering (SSR), Static Site Generation (SSG) and Incremental Static Regeneration (ISR). He also works with Apache Kafka and WebSockets for real-time data, Redux Toolkit and React Query for state, NestJS on the backend, and TailwindCSS for styling.",
+    a: "On the client he works with React.js, Next.js, TypeScript and JavaScript (ES6+), with deep knowledge of Server-Side Rendering (SSR), Static Site Generation (SSG) and Incremental Static Regeneration (ISR), plus Redux Toolkit, React Query and TailwindCSS. On the server he builds with Node.js, NestJS and Express, designing RESTful APIs, GraphQL endpoints and microservices, and integrating MongoDB, PostgreSQL and Firebase. He also uses Apache Kafka and WebSockets for real-time data pipelines.",
   },
   {
     q: "What has Muhammad Gohar built?",
@@ -66,6 +66,6 @@ export const FAQS = [
   },
   {
     q: "Is Muhammad Gohar available for hire?",
-    a: "Yes. He is open to senior frontend engineering roles, freelance projects and consulting engagements focused on web performance, technical SEO and AI-assisted delivery. He can be reached at gohar350butt@gmail.com or on LinkedIn, and typically replies within a day.",
+    a: "Yes. He is open to senior full stack engineering roles, freelance projects and consulting engagements focused on web performance, technical SEO and AI-assisted delivery. He can be reached at gohar350butt@gmail.com or on LinkedIn, and typically replies within a day.",
   },
 ];

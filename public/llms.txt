@@ -1,21 +1,22 @@
 # Muhammad Gohar
 
-> Senior Software Engineer based in Lahore, Pakistan. Three years building
-> scalable, SEO-optimised, real-time web applications with React, Next.js and
-> TypeScript. Currently at ElkTech; previously Sixlogics, where he engineered
-> live sports platforms serving 100,000+ daily active users.
+> Senior Full Stack Engineer based in Lahore, Pakistan. Three years building
+> scalable, SEO-optimised, real-time web applications end to end — React, Next.js
+> and TypeScript on the client, Node.js, NestJS, REST APIs and databases on the
+> server. Currently at ElkTech; previously Sixlogics, where he engineered live
+> sports platforms serving 100,000+ daily active users.
 
 Canonical site: https://muhammadgohar.vercel.app
 
 ## Identity
 
 - Full name: Muhammad Gohar (also known as Gohar Butt)
-- Role: Senior Software Engineer — Frontend Engineer, React Developer, AI Prompt Engineer
+- Role: Senior Full Stack Engineer — React & Next.js, Node.js & NestJS, AI Prompt Engineer
 - Location: Lahore, Punjab, Pakistan
 - Email: gohar350butt@gmail.com
 - LinkedIn: https://www.linkedin.com/in/gohar-butt-0118b1422
 - GitHub: https://github.com/muhammadgohar
-- Availability: open to senior frontend roles, freelance and consulting
+- Availability: open to senior full stack roles, freelance and consulting
 
 ## Core expertise
 
@@ -23,7 +24,8 @@ Canonical site: https://muhammadgohar.vercel.app
 - Frontend: React.js, Next.js, Angular, Vue.js, SSR, SSG, ISR, SPA, PWA
 - State: Redux Toolkit, React Query (TanStack Query), Zustand, Context API
 - Real-time: Apache Kafka, WebSockets, Server-Sent Events, event-driven architecture
-- Backend: Node.js, NestJS, REST APIs, microservices
+- Backend: Node.js, NestJS, Express.js, REST APIs, GraphQL, microservices, Server Actions
+- Databases: MongoDB, PostgreSQL, Firebase, Supabase, Prisma, SQL
 - AI: Claude Code, Claude AI, ChatGPT, OpenAI API, LangChain, MCP, GitHub Copilot, Cursor AI
 - Performance & SEO: Core Web Vitals, JSON-LD schema, XML sitemaps, code splitting, Lighthouse
 - Testing: Jest, React Testing Library, Cypress, Playwright, TDD

@@ -41,7 +41,9 @@ export default {
     { name: "Apache Kafka / WebSockets", percentage: 80 },
     { name: "SEO & Core Web Vitals", percentage: 85 },
     { name: "Testing & TDD (Jest, Cypress, Playwright)", percentage: 80 },
-    { name: "Node.js / NestJS", percentage: 60 },
+    { name: "Node.js / NestJS / Express", percentage: 80 },
+    { name: "REST APIs / GraphQL / Microservices", percentage: 80 },
+    { name: "MongoDB / PostgreSQL", percentage: 75 },
   ],
   aiExpertise: [
     {
@@ -95,6 +97,16 @@ export default {
       "PWA",
       "Responsive Design",
     ],
+    backend: [
+      "Node.js",
+      "NestJS",
+      "Express.js",
+      "REST APIs",
+      "GraphQL",
+      "Microservices",
+      "Server Actions",
+    ],
+    database: ["MongoDB", "PostgreSQL", "Firebase", "Supabase", "Prisma"],
     stateManagement: [
       "Redux Toolkit",
       "React Query (TanStack Query)",
@@ -114,7 +126,6 @@ export default {
       "Server-Sent Events (SSE)",
       "Event-Driven Architecture",
     ],
-    backend: ["Node.js", "NestJS", "REST APIs", "Microservices"],
     ai: [
       "Claude AI",
       "Claude Code CLI",

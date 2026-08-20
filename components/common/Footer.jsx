@@ -11,7 +11,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="shell footer__in">
         <p className="footer__note">
-          © {new Date().getFullYear()} Muhammad Gohar — Frontend Engineer,
+          © {new Date().getFullYear()} Muhammad Gohar — Full Stack Engineer,
           Lahore.
           <br />
           Built with Next.js · No UI framework, no animation library.

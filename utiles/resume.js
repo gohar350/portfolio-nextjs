@@ -1,10 +1,10 @@
 export default {
   description:
-    "A passionate Frontend Engineer and React Developer with expertise in building scalable, high-performance, SEO-optimized web applications. Proficient in AI Prompt Engineering using Claude AI, ChatGPT, and LLM-powered development tools.",
+    "A passionate Full Stack Engineer building scalable, high-performance, SEO-optimized web applications end to end — React and Next.js on the client, Node.js and NestJS on the server. Proficient in AI Prompt Engineering using Claude AI, ChatGPT, and LLM-powered development tools.",
   summary: {
     name: "Muhammad Gohar",
     intro:
-      "Results-driven Frontend Engineer and React Developer with 3 years of experience building scalable, high-performance, and SEO-optimized web applications. Expert in React.js, Next.js, TypeScript, and JavaScript (ES6+) with deep knowledge of Server-Side Rendering (SSR), Static Site Generation (SSG), and Incremental Static Regeneration (ISR). Proficient in AI Prompt Engineering using Claude AI, ChatGPT, and LLM-powered development tools. Skilled in RESTful API integration and microservices architecture. Strong expertise in state management, responsive design, and test-driven development (TDD).",
+      "Results-driven Full Stack Engineer with 3 years of experience building scalable, high-performance, and SEO-optimized web applications end to end. Expert in React.js, Next.js, TypeScript, and JavaScript (ES6+) with deep knowledge of Server-Side Rendering (SSR), Static Site Generation (SSG), and Incremental Static Regeneration (ISR). Builds and integrates server-side services with Node.js, NestJS, RESTful APIs and microservices architecture. Proficient in AI Prompt Engineering using Claude AI, ChatGPT, and LLM-powered development tools. Strong expertise in state management, database integration, responsive design, and test-driven development (TDD).",
     details: [
       "Lahore, Pakistan",
       "+92 305 935 8248",
@@ -39,7 +39,7 @@ export default {
       company: "Sixlogics, Lahore, Pakistan",
       responsibilities: [
         "Architected and developed high-traffic live sports platforms (Racing and Sports UK, Betway Scores, Hollywood Bets Live Scores) serving 100K+ daily active users",
-        "Built scalable frontend applications using Next.js 16, React.js 18, TypeScript, and NestJS, achieving 40% improvement in page load times",
+        "Built scalable full-stack applications using Next.js 16, React.js 18, TypeScript, and NestJS, achieving 40% improvement in page load times",
         "Implemented real-time data streaming pipelines with Apache Kafka for live sports data, ensuring sub-second latency",
         "Optimized SEO performance using structured data schemas (JSON-LD), dynamic XML sitemaps, resulting in 60% increase in organic traffic",
         "Managed complex application state using React Query, Redux Toolkit, and Context API, improving caching efficiency by 35%",
@@ -118,8 +118,12 @@ export default {
     "WebSockets",
     "Node.js",
     "NestJS",
+    "Express.js",
     "REST APIs",
+    "GraphQL",
     "Microservices",
+    "MongoDB",
+    "PostgreSQL",
     "Technical SEO",
     "Claude AI",
     "Claude Code CLI",

@@ -7,7 +7,7 @@ import { ImageResponse } from "next/og";
  * in the repo, so every LinkedIn/X/WhatsApp share rendered a broken preview.
  * Generating it guarantees the asset exists and stays on-brand.
  */
-export const alt = "Muhammad Gohar — Senior Software Engineer, Frontend & React";
+export const alt = "Muhammad Gohar — Senior Software Engineer, Full Stack Developer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -89,7 +89,7 @@ export default function OpengraphImage() {
               display: "flex",
             }}
           >
-            React · Next.js · TypeScript — real-time platforms
+            React · Next.js · Node.js — end-to-end web platforms
           </div>
         </div>
 

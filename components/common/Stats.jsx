@@ -5,6 +5,7 @@ const CATEGORY_META = {
   styling: { icon: "bi-palette", name: "Styling & UI" },
   realTime: { icon: "bi-broadcast-pin", name: "Real-Time" },
   backend: { icon: "bi-hdd-network", name: "Backend" },
+  database: { icon: "bi-database", name: "Databases" },
   ai: { icon: "bi-robot", name: "AI & Prompt Engineering" },
   devops: { icon: "bi-gear-wide-connected", name: "DevOps & Tools" },
   testing: { icon: "bi-check2-circle", name: "Testing" },
@@ -42,8 +43,9 @@ export default function Stats({ stats = {}, showCounters = false }) {
             The toolkit behind <span className="grad">the work</span>
           </h2>
           <p>
-            Depth where it matters — rendering strategy, state, real-time data
-            and Core Web Vitals — plus the AI workflow that compounds all of it.
+            End to end: rendering strategy, state and Core Web Vitals on the
+            client; Node.js services, APIs, databases and real-time pipelines on
+            the server — plus the AI workflow that compounds all of it.
           </p>
         </div>
 

@@ -39,7 +39,7 @@ export default function ContactSection({ data = {}, primary = false }) {
               )}
             </H>
             <p className="contact__lede">
-              Open to senior frontend roles, freelance builds and consulting on
+              Open to senior full stack roles, freelance builds and consulting on
               performance, SEO and AI-assisted delivery. I reply within a day.
             </p>
 

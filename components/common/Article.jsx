@@ -13,7 +13,7 @@ export default function Article({ data = {}, primary = false }) {
           <H>
             {primary ? (
               <>
-                Muhammad Gohar — <span className="grad">Frontend Engineer</span>
+                Muhammad Gohar — <span className="grad">Full Stack Engineer</span>
               </>
             ) : (
               <>

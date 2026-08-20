@@ -14,7 +14,7 @@ export const SITE_URL =
   "https://muhammadgohar.vercel.app";
 
 export const SITE_NAME =
-  process.env.NEXT_PUBLIC_SITE_NAME || "Muhammad Gohar — Frontend Engineer";
+  process.env.NEXT_PUBLIC_SITE_NAME || "Muhammad Gohar — Full Stack Engineer";
 
 export const OG_IMAGE = process.env.NEXT_PUBLIC_SITE_IMAGE || "/opengraph-image";
 
@@ -27,7 +27,11 @@ export const PERSON = {
   name: "Muhammad Gohar",
   givenName: "Muhammad",
   familyName: "Gohar",
-  jobTitle: "Senior Software Engineer",
+  /* Display/positioning title. */
+  jobTitle: "Senior Full Stack Engineer",
+  /* schema.org jobTitle accepts multiple values — emit both the literal title
+     on his CV and the discipline people actually search for. */
+  jobTitles: ["Senior Software Engineer", "Full Stack Engineer", "Full Stack Developer"],
   email: "gohar350butt@gmail.com",
   telephone: "+92-305-935-8248",
   city: "Lahore",
